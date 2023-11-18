@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+   background-color: #088F8F;
+}
+.container{
+    width: min(60%, 28.12em);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+.container *{
+    border: none;
+    outline: none;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 2px rgb(110, 255, 255);
+  }
+.input-wrapper{
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(78, 70, 70);
+    margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 30px;
+}
+input, button{
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px lightgray;
+}
+input{
+    background-color: #E6E6FA;
+    padding: 10px;
+}
+button{
+    color: #000000;
+    background: linear-gradient(91.9deg, rgb(94, 124, 121) 4.4%, rgb(64, 224, 208) 89%);
+    padding: 10px;
+    opacity: 0.8;
+}
+button:hover{
+    opacity: 1;
+}
+.output-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.output-wrapper div{
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    padding: 10px 0;
+    box-shadow: 5px 5px 5px rgb(76, 72, 72);
+}
+span{
+    font-size: 30px;
+    font-weight: 500;
+}
+p{
+    font-size: 15px;
+    color: rgb(97, 95, 95);
+    font-weight: 400;
+}
