@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <style>
+        body{
+            background-color: rgb(44, 33, 129);
+        }
+        
+        .content{
+            background-color: rgb(52, 129, 222);
+            width: 400px;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 8px;
+        }
+
+        .title{
+            font-size: 20px;
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 10px;
+        }
+
+        label{
+            display: block;
+            margin: 0px 20px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+        }
+        .user-input{
+            width: 80%;
+            padding: 10px 15px; 
+            margin: 0px 20px;
+            border: 1px solid cadetblue;
+            border-radius: 5px;
+        }
+        .checkbox-group{
+            margin: 0px 20px;
+            margin-top: 15px;
+        }
+        .checkbox-group span{
+            color: white;
+        }
+        .register-btn{
+            width: 88%;
+            margin: 30px 20px;
+            border: none;
+            background-color: rgb(19, 10, 89);
+            color: white;
+            padding: 15px 15px; 
+            margin-top: 15px;
+            border-radius: 5px;
+        }
+        .footer-text{
+            text-align: center;
+            padding: 25px 20px;
+        }
+        .footer-text span{
+            color: white;
+        }
+        .button-group{
+            padding-top: 15px;
+        }
+        .result{
+            text-align: right;
+            padding: 15px 15px;
+            font-size: 20px;
+            background-color: gray;
+            margin: 0px 10px;
+        }
+        .error{
+            color: red;
+            margin: 5px 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="title">Calculator Project</div>
+        <div class="result" id="result">
+            0
+        </div>
+        <div class="input-group">
+            <label for="">Number One :</label>
+            <input type="number"class="user-input" id="firstNo" placeholder="Enter first number...">
+            <small class="error" id="numOneError">Number One is required</small>
+        </div>
+        <div class="input-group">
+            <label for="">Number Two :</label>
+            <input type="number"class="user-input" id="secondNo" placeholder="Enter second number...">
+            <small class="error" id="numTwoError">Number Two is required</small>
+        </div>
+        <div class="input-group">
+            <label for="">Operators :</label>
+            <select class="user-input" id="operation">
+                <option value="empty">Choose Options...</option>
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="multiply">*</option>
+                <option value="divide">/</option>
+            </select>
+            <small class="error" id="operatorError">Operator is required</small>
+        </div>
+        <div class="button-group">
+            <button type="button" class="register-btn" id="btnCalculate">Calcuate</button>
+        </div>
+    </div>
+    
+</body>
+<script src="./calculator.js"></script>
+</html>
